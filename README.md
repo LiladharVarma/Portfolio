@@ -5,7 +5,7 @@ Welcome to my GitHub portfolio repository! This repository serves as a showcase 
 
 ## About
 
-This portfolio website is a reflection of my skills and projects up to this point in my web development journey. It demonstrates my proficiency in HTML and CSS for creating visually appealing  web pages. In the future, I'll be adding JavaScript to make it more interactive and dynamic.
+This portfolio website is a reflection of my skills and projects up to this point in my web development journey. It demonstrates my proficiency in HTML and CSS for creating visually appealing  web pages. In the future, I'll be adding JavaScript to make it more interactive and dynamic. Please note that, at its current state, the website is optimized for larger screens and may not be fully responsive on smaller devices.
 
 ## Features
 
