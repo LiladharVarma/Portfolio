@@ -16,4 +16,4 @@ This portfolio website is a reflection of my skills and projects up to this poin
 
 ## Getting Started
 
-To view my portfolio website, simply visit https://liladharvarma.github.io/Portfolio/(#) hosted on GitHub Pages. You can also clone this repository to your local machine and open the `index.html` file in your web browser.
+To view my portfolio website, simply visit https://liladharvarma.github.io/Portfolio/ hosted on GitHub Pages. You can also clone this repository to your local machine and open the `index.html` file in your web browser.
