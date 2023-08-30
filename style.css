@@ -1,0 +1,328 @@
+    * {
+        /* background-color: black; */
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        /* background-color: black; */
+        font-family: 'Quicksand', sans-serif;
+
+    }
+
+    .home-container {
+        /* border: 2px solid white; */
+        height: 100vh;
+        /* block-size:fit-content; */
+        /* background: url("image/backgroundImage.jpg"); */
+        background: url("image/lion.jpg");
+        /* background: url("image/myImage.jpg"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+
+    }
+
+    nav {
+        font-family: 'Montserrat', sans-serif;
+        /* font-family: 'Quicksand', sans-serif; */
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0px 20px 0px;
+        /* border-bottom: 2px solid #f9004d; */
+    }
+
+    .heading {
+        color: white;
+        text-decoration: underline;
+        font-size: 2.2rem;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+
+    ul li {
+
+        text-decoration: none;
+        display: inline;
+        margin-left: 40px;
+        margin-right: 15px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        transition: 0.8s;
+        font-size: 2rem;
+        color: #f9004d;
+
+        /* text-shadow: 1px 1px 2px white , 0 0 1em blue, 0 0 0.2em orange; */
+    }
+
+    #btn {
+        background-color: transparent;
+        color: white;
+        border-radius: 12px;
+        border: 1px solid white;
+        margin: 15px;
+        padding: 15px;
+        width: 10%;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+
+    }
+
+    #btn:hover {
+        transition: .6s;
+        transform: scale(1.2);
+        cursor: pointer;
+        box-shadow: 2px 2px 2px white;
+        background-color: #ff0252;
+        opacity: 5px;
+    }
+
+    .home {
+        /* border: 2px solid white; */
+        display: flex;
+        justify-content: end;
+        /* border: 2px solid white; */
+        align-items: center;
+        flex-direction: column;
+
+
+
+    }
+
+    .myName {
+        /* border: 2px solid red; */
+        letter-spacing: 1px;
+        color: white;
+        font-family: 'Merriweather', serif;
+        font-style: italic;
+        align-self: flex-start;
+        /*by removing this text will align at centre */
+
+    }
+
+    .name {
+        letter-spacing: 2px;
+        color: #f9004d;
+        font-size: 4rem;
+    }
+
+    .caption {
+        color: white;
+        align-self: flex-start;
+        /*by removing this text will align at centre */
+        /* text-align: start; */
+        /* align-self: flex-end; */
+        /* padding-bottom: 100%; */
+    }
+
+    /* AboutSection */
+
+    .About-container {
+        /* border: 2px solid white; */
+        color: white;
+        text-align: center;
+        height: 125vh;
+        background: url("image/bookShelf.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        /* backdrop-filter: blur(10px); */
+
+        padding: 30px 0px 0px 0px;
+        position: relative;
+
+    }
+
+    /* #education {
+        display: flex;
+        color: white;
+        margin-top: 30px;
+        justify-content: space-around;
+        align-items: center;
+    
+    } */
+    #education {
+        display: grid;
+        /* border: 3px solid rgb(255, 0, 0); */
+        color: white;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 2fr);
+
+    }
+
+    .box {
+        /* border: 3px solid white; */
+        border-radius: 29px;
+        margin: 6px 6px;
+        padding: 30px 30px;
+        text-align: center;
+        /* box-shadow: 2px 2px 2px white; */
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .centre {
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .h1-primary {
+        font-size: 2.5rem;
+        color: #f9004d;
+        text-shadow: 2px 2px 2px black;
+
+    }
+
+    .h2-secondary {
+        padding-bottom: 20px;
+    }
+
+    .first {
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+
+    .intro {
+        font-size: 1.5rem;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        position: relative;
+        height: 130vh;
+        /* background: url("image/pexels-nemuel-sereti-6424588.jpg") ; */
+        /* background: url("image/pexels-jessica-lewis-593316.jpg") ; */
+        background: url("image/skill-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        color: white;
+        /* border: 2px solid white; */
+    }
+
+    #skills {
+        display: grid;
+        color: white;
+        padding-top: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 2fr);
+
+    }
+
+    .skill-heading {
+        font-size: 2.5rem;
+        color: #f9004d;
+        text-shadow: 2px 2px 2px black;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .style {
+        text-shadow: 2px 2px 2px black;
+        list-style-type: none;
+    }
+
+    .skill-intro {
+        font-size: 1.5rem;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+    .skill-box {
+        background-color: rgba(0, 0, 0, .3);
+        color: #fff;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .skill-title {
+        padding: 14px;
+    }
+
+    /* Socials section */
+    .social-container{
+        position: relative;
+        height: 130vh;
+        background: url("image/social-blur.jpg");
+        background-repeat: no-repeat;
+        background-position: center / top;
+        background-size: cover;
+    }
+
+    .social-heading {
+        font-size: 2.5rem;
+        color: #f9004d;
+        text-shadow: 2px 2px 2px black;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .social-handles{
+        /* color: white; */
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+
+    .icon{
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 100px;
+    /* border: 3px solid black; */
+    text-align: center;
+    margin: 10px;
+    font-size: 45px;
+    line-height: 80px;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px black;
+    transition: all .3s ease-out;
+    /* color: #fff; */
+    }
+    .icon:hover{
+        width: 350px;
+            border: 2px solid black;
+    }
+
+
+  .linkdin  {
+    color: #007bb6;
+   
+  }
+  .github{
+color: black;
+  }
+  .instagram{
+color: #c32aa3;
+  }
+  .twitter{
+    color: black;
+  }
