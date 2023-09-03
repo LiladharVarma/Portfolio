@@ -69,6 +69,10 @@
         /* text-shadow: 1px 1px 2px white , 0 0 1em blue, 0 0 0.2em orange; */
     }
 
+    #forList{
+        visibility: hidden;
+    }
+
     #btn {
         background-color: transparent;
         color: white;
@@ -84,6 +88,20 @@
         font-size: 1rem;
 
     }
+    #magic-btn {
+        background-color: transparent;
+        color: white;
+        border-radius: 12px;
+        border: 1px solid white;
+        margin: 15px;
+        padding: 15px;
+        width: 10%;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
 
     #btn:hover {
         transition: .6s;
@@ -96,14 +114,11 @@
 
     .home {
         /* border: 2px solid white; */
-        display: flex;
-        justify-content: end;
+        /* display: flex;
+        justify-content: start; */
         /* border: 2px solid white; */
         align-items: center;
         flex-direction: column;
-
-
-
     }
 
     .myName {
@@ -121,6 +136,9 @@
         letter-spacing: 2px;
         color: #f9004d;
         font-size: 4rem;
+        font-family: 'Merriweather', serif;
+        font-style: italic;
+        align-self: flex-start;
     }
 
     .caption {
@@ -131,6 +149,10 @@
         /* align-self: flex-end; */
         /* padding-bottom: 100%; */
     }
+#bracket{
+color:transparent;
+font-family: 'Merriweather', serif;
+}
 
     /* AboutSection */
 
