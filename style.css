@@ -13,10 +13,13 @@
         font-family: 'Quicksand', sans-serif;
 
     }
-
+.space
+{
+    height: 70vh;
+}
     .home-container {
         /* border: 2px solid white; */
-        height: 100vh;
+        height: auto;
         /* block-size:fit-content; */
         /* background: url("image/backgroundImage.jpg"); */
         background: url("image/lion.jpg");
@@ -36,6 +39,7 @@
         align-items: center;
         padding: 20px 0px 20px 0px;
         /* border-bottom: 2px solid #f9004d; */
+        flex-wrap: wrap;
     }
 
     .heading {
@@ -46,7 +50,7 @@
         cursor: pointer;
 
     }
-
+   
     ul li {
 
         text-decoration: none;
@@ -63,7 +67,8 @@
 
     nav ul li a:hover {
         transition: 0.8s;
-        font-size: 2rem;
+        font-size: 1.5rem;
+
         color: #f9004d;
 
         /* text-shadow: 1px 1px 2px white , 0 0 1em blue, 0 0 0.2em orange; */
@@ -73,6 +78,11 @@
         visibility: hidden;
     }
 
+    .aspect-ratio{
+        width: 100% ;
+        aspect-ratio: 16 / 9 ;
+    }
+
     #btn {
         background-color: transparent;
         color: white;
@@ -80,7 +90,7 @@
         border: 1px solid white;
         margin: 15px;
         padding: 15px;
-        width: 10%;
+        /* width: 10%; */
         text-decoration: none;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
@@ -160,7 +170,8 @@ font-family: 'Merriweather', serif;
         /* border: 2px solid white; */
         color: white;
         text-align: center;
-        height: 125vh;
+        /* height: 125vh; */
+        height: auto;
         background: url("image/bookShelf.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -181,7 +192,9 @@ font-family: 'Merriweather', serif;
     
     } */
     #education {
-        display: grid;
+        /* display: grid; */
+        display: flex;
+        flex-direction: column;
         /* border: 3px solid rgb(255, 0, 0); */
         color: white;
         margin-top: 30px;
@@ -232,7 +245,8 @@ font-family: 'Merriweather', serif;
     /* Skills Section */
     .skills-container {
         position: relative;
-        height: 130vh;
+        /* height: 130vh; */
+        height: auto;
         /* background: url("image/pexels-nemuel-sereti-6424588.jpg") ; */
         /* background: url("image/pexels-jessica-lewis-593316.jpg") ; */
         background: url("image/skill-background.jpg");
@@ -244,7 +258,9 @@ font-family: 'Merriweather', serif;
     }
 
     #skills {
-        display: grid;
+        /* display: grid; */
+        display: flex;
+        flex-direction: column;
         color: white;
         padding-top: 30px;
         grid-template-columns: repeat(3, 1fr);
@@ -289,7 +305,8 @@ font-family: 'Merriweather', serif;
     /* Socials section */
     .social-container{
         position: relative;
-        height: 130vh;
+        /* height: 130vh; */
+        height: auto;
         background: url("image/social-blur.jpg");
         background-repeat: no-repeat;
         background-position: center / top;
