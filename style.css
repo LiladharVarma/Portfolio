@@ -13,18 +13,16 @@
         font-family: 'Quicksand', sans-serif;
 
     }
-<<<<<<< HEAD
 
     .space {
         height: 70vh;
     }
 
-=======
 .space
 {
     height: 70vh;
 }
->>>>>>> b71590b4c9153fe9206b166e32c15279c12564a7
+
     .home-container {
         /* border: 2px solid white; */
         height: auto;
@@ -67,14 +65,10 @@ margin-left:800px ;
         cursor: pointer;
 
     }
-<<<<<<< HEAD
 
     .navbar{
         margin: 25px;
     }
-=======
-   
->>>>>>> b71590b4c9153fe9206b166e32c15279c12564a7
     ul li {
 
         text-decoration: none;
@@ -103,15 +97,15 @@ margin-left:800px ;
         visibility: hidden;
     }
 
-<<<<<<< HEAD
+
     .aspect-ratio {
         width: 100%;
         aspect-ratio: 16 / 9;
-=======
+    }
+
     .aspect-ratio{
         width: 100% ;
         aspect-ratio: 16 / 9 ;
->>>>>>> b71590b4c9153fe9206b166e32c15279c12564a7
     }
 
     #btn {
@@ -217,15 +211,14 @@ margin-left:800px ;
     }
 
     #education {
-<<<<<<< HEAD
+
         display: grid;
         /* display: flex; */
         /* flex-direction: column; */
-=======
+
         /* display: grid; */
         display: flex;
         flex-direction: column;
->>>>>>> b71590b4c9153fe9206b166e32c15279c12564a7
         /* border: 3px solid rgb(255, 0, 0); */
         color: white;
         margin-top: 30px;
@@ -290,13 +283,9 @@ margin-left:800px ;
 
     #skills {
         /* display: grid; */
-<<<<<<< HEAD
+
         display: grid;
         /* flex-direction: column; */
-=======
-        display: flex;
-        flex-direction: column;
->>>>>>> b71590b4c9153fe9206b166e32c15279c12564a7
         color: white;
         /* padding-top: 30px; */
         grid-template-columns: repeat(auto-fit , minmax(400px , 1fr));
