@@ -14,9 +14,13 @@
 
     }
 
+    .space {
+        height: 70vh;
+    }
+
     .home-container {
         /* border: 2px solid white; */
-        height: 100vh;
+        height: auto;
         /* block-size:fit-content; */
         /* background: url("image/backgroundImage.jpg"); */
         background: url("image/lion.jpg");
@@ -27,6 +31,15 @@
 
     }
 
+    /* .home{   
+        border: 2px solid black;
+    }
+
+    img{
+        max-width: 400px;
+        height: auto;
+margin-left:800px ;
+    } */
     nav {
         font-family: 'Montserrat', sans-serif;
         /* font-family: 'Quicksand', sans-serif; */
@@ -36,6 +49,7 @@
         align-items: center;
         padding: 20px 0px 20px 0px;
         /* border-bottom: 2px solid #f9004d; */
+        flex-wrap: wrap;
     }
 
     .heading {
@@ -47,30 +61,40 @@
 
     }
 
+    .navbar{
+        margin: 25px;
+    }
     ul li {
 
         text-decoration: none;
         display: inline;
-        margin-left: 40px;
-        margin-right: 15px;
+        /* margin-left: 40px;
+        margin-right: 15px; */
     }
 
     ul li a {
         text-decoration: none;
         color: white;
         font-weight: bold;
+        margin: 20px;
     }
 
     nav ul li a:hover {
         transition: 0.8s;
-        font-size: 2rem;
+        font-size: 1.5rem;
+
         color: #f9004d;
 
         /* text-shadow: 1px 1px 2px white , 0 0 1em blue, 0 0 0.2em orange; */
     }
 
-    #forList{
+    #forList {
         visibility: hidden;
+    }
+
+    .aspect-ratio {
+        width: 100%;
+        aspect-ratio: 16 / 9;
     }
 
     #btn {
@@ -80,7 +104,7 @@
         border: 1px solid white;
         margin: 15px;
         padding: 15px;
-        width: 10%;
+        /* width: 10%; */
         text-decoration: none;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
@@ -88,6 +112,7 @@
         font-size: 1rem;
 
     }
+
     #magic-btn {
         background-color: transparent;
         color: white;
@@ -149,10 +174,11 @@
         /* align-self: flex-end; */
         /* padding-bottom: 100%; */
     }
-#bracket{
-color:transparent;
-font-family: 'Merriweather', serif;
-}
+
+    #bracket {
+        color: transparent;
+        font-family: 'Merriweather', serif;
+    }
 
     /* AboutSection */
 
@@ -160,7 +186,8 @@ font-family: 'Merriweather', serif;
         /* border: 2px solid white; */
         color: white;
         text-align: center;
-        height: 125vh;
+        /* height: 125vh; */
+        height: auto;
         background: url("image/bookShelf.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -172,21 +199,15 @@ font-family: 'Merriweather', serif;
 
     }
 
-    /* #education {
-        display: flex;
-        color: white;
-        margin-top: 30px;
-        justify-content: space-around;
-        align-items: center;
-    
-    } */
     #education {
         display: grid;
+        /* display: flex; */
+        /* flex-direction: column; */
         /* border: 3px solid rgb(255, 0, 0); */
         color: white;
         margin-top: 30px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, 2fr);
+        grid-template-columns: repeat(auto-fit , minmax(400px , 1 fr ))
+        /* grid-template-rows: repeat(2, 2fr); */
 
     }
 
@@ -232,7 +253,8 @@ font-family: 'Merriweather', serif;
     /* Skills Section */
     .skills-container {
         position: relative;
-        height: 130vh;
+        /* height: 130vh; */
+        height: auto;
         /* background: url("image/pexels-nemuel-sereti-6424588.jpg") ; */
         /* background: url("image/pexels-jessica-lewis-593316.jpg") ; */
         background: url("image/skill-background.jpg");
@@ -244,11 +266,13 @@ font-family: 'Merriweather', serif;
     }
 
     #skills {
+        /* display: grid; */
         display: grid;
+        /* flex-direction: column; */
         color: white;
-        padding-top: 30px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 2fr);
+        /* padding-top: 30px; */
+        grid-template-columns: repeat(auto-fit , minmax(400px , 1fr));
+        /* grid-template-rows: repeat(2, 2fr); */
 
     }
 
@@ -287,9 +311,10 @@ font-family: 'Merriweather', serif;
     }
 
     /* Socials section */
-    .social-container{
+    .social-container {
         position: relative;
-        height: 130vh;
+        /* height: 130vh; */
+        height: auto;
         background: url("image/social-blur.jpg");
         background-repeat: no-repeat;
         background-position: center / top;
@@ -304,47 +329,51 @@ font-family: 'Merriweather', serif;
         margin-bottom: 30px;
     }
 
-    .social-handles{
+    .social-handles {
         /* color: white; */
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         /* border: 2px solid red; */
     }
 
-    .icon{
-    height: 80px;
-    width: 80px;
-    background-color: #fff;
-    border-radius: 100px;
-    /* border: 3px solid black; */
-    text-align: center;
-    margin: 10px;
-    font-size: 45px;
-    line-height: 80px;
-    font-family: 'Quicksand', sans-serif;
-    overflow: hidden;
-    box-shadow: 5px 10px 20px black;
-    transition: all .3s ease-out;
-    /* color: #fff; */
+    .icon {
+        height: 80px;
+        width: 80px;
+        background-color: #fff;
+        border-radius: 100px;
+        /* border: 3px solid black; */
+        text-align: center;
+        margin: 10px;
+        font-size: 45px;
+        line-height: 80px;
+        font-family: 'Quicksand', sans-serif;
+        overflow: hidden;
+        box-shadow: 5px 10px 20px black;
+        transition: all .3s ease-out;
+        /* color: #fff; */
     }
-    .icon:hover{
+
+    .icon:hover {
         width: 350px;
-            border: 2px solid black;
+        border: 2px solid black;
     }
 
 
-  .linkdin  {
-    color: #007bb6;
-   
-  }
-  .github{
-color: black;
-  }
-  .instagram{
-color: #c32aa3;
-  }
-  .twitter{
-    color: black;
-  }
+    .linkdin {
+        color: #007bb6;
+
+    }
+
+    .github {
+        color: black;
+    }
+
+    .instagram {
+        color: #c32aa3;
+    }
+
+    .twitter {
+        color: black;
+    }
